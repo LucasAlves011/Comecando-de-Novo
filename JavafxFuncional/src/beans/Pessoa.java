@@ -1,7 +1,13 @@
 package beans;
 
+import java.util.ArrayList;
+
+import dados.RepositorioPessoa;
+
 public class Pessoa {
 
+	RepositorioPessoa a = new RepositorioPessoa();
+	
 	private String nome;
 	private int idade;
 		
@@ -24,7 +30,7 @@ public class Pessoa {
 	}
 		
 	public String toString() {
-		return this.getNome()+ " "+ this.getIdade() + "\n";
+		return "Nome : "+this.getNome()+", Idade: "+this.getIdade()+"\n";
 	}
 	
 }

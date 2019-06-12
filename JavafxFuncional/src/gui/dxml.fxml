@@ -9,9 +9,9 @@
 <?import javafx.scene.text.Text?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="negocio.ControladorTela">
    <children>
-      <Button layoutX="201.0" layoutY="207.0" mnemonicParsing="false" text="Salvar" />
+      <Button layoutX="201.0" layoutY="207.0" mnemonicParsing="false" onAction="#setarNome" text="Salvar" />
       <Text layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JavafxFuncional  - Versão Alpha - GitHub only">
          <font>
             <Font size="21.0" />
@@ -35,7 +35,7 @@
             <Font size="13.0" />
          </font>
       </Text>
-      <TextField layoutX="174.0" layoutY="99.0" />
-      <TextField layoutX="174.0" layoutY="140.0" prefHeight="25.0" prefWidth="52.0" />
+      <TextField fx:id="txtNome" layoutX="174.0" layoutY="99.0" />
+      <TextField fx:id="txtIdade" layoutX="174.0" layoutY="140.0" prefHeight="25.0" prefWidth="52.0" />
    </children>
 </Pane>

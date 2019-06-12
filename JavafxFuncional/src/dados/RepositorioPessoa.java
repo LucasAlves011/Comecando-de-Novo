@@ -9,7 +9,7 @@ public class RepositorioPessoa {
 	
 	private ArrayList<Pessoa> grupo;
 	
-	
+		
 	public RepositorioPessoa() {
 		grupo = new ArrayList<Pessoa>();
 	}
@@ -20,14 +20,18 @@ public class RepositorioPessoa {
 	
 	
 	public void add(Pessoa p) {
-		grupo.add(p);
+		grupo.add(p);		
 	}
 	
 	public void remover(Pessoa p) {
 		grupo.remove(p);
 	}
 	
-	public String listar() {
-		return grupo.toString();
+	public ArrayList<Pessoa> listar() {
+		return grupo;
+	}
+	
+	public int tamanho() {
+		return grupo.size();
 	}
 }
